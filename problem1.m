@@ -1,11 +1,12 @@
 
 r = abs(rand(1600,1));
 theta = 2*pi*rand(1600,1);
-phi = pi*rand(1600,1);
+u = rand(1600,1);
+phi = acos(1-2*u);
 
-x = r.*sin(theta).*sin(phi);
-y = r.*cos(theta).*sin(phi);
-z = r.*cos(phi);
+x = cbrt(r).*cos(theta).*sin(phi);
+y = cbrt(r).*sin(theta).*sin(phi);
+z = cbrt(r).*cos(phi);
 
 Graph = [];
 for i=1:1600

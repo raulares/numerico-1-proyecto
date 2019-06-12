@@ -19,4 +19,4 @@ for i=1:m
   average = average + 1/6*abs(dot(cross(P(4*i-2,:)-P(4*i-3,:),P(4*i-1,:)-P(4*i-3,:)),P(4*i,:)-P(4*i-3,:)));
 endfor
 
-average = average/m
+average = average/n

@@ -1,6 +1,6 @@
 
 
-n=50000;
+n=100000;
 r = rand(n,7);
 m=0;
 
@@ -18,4 +18,4 @@ for i=1:n
   endfor
 endfor
 
-per = m/n
+per = 100*m/n
